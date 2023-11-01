@@ -4,9 +4,9 @@ node {
       git url: 'https://github.com/Msupriya1506/b810am.git', branch: 'main'
       mvnHome = tool 'maven'
    }
-  stage ('codescanning') {
+  stage ('Code Scanning') {
       sh "'${mvnHome}/bin/mvn' sonar:sonar"
-  }   
+  }
   stage ('Clean') {
       sh "'${mvnHome}/bin/mvn' clean"
   }
