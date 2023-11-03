@@ -23,6 +23,9 @@ node {
   stage ('Verify') {
       sh "'${mvnHome}/bin/mvn' verify"
   }
+  stage ('package') {
+      sh "'${mvnHome}/bin/mvn' package"
+  }
   stage ('deploy') {
       sh "'${mvnHome}/bin/mvn' deploy"
   }
