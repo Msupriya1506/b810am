@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aws.codestar.projecttemplates</groupId>
     <artifactId>dev</artifactId>
-    <version>9.8.0-release</version>
+    <version>9.10.0-release</version>
     <packaging>war</packaging>
     <name>Cloud Binary - Sample Spring MVC Application</name>
 
@@ -38,19 +38,17 @@
     -->
   
 <distributionManagement>
-    
     <repository>
         <id>release</id>
         <name>jfrog.cloudbinary.io-releases</name>
-        <url>http://100.26.56.180:8081/artifactory/libs-release-local</url>
+        <url>http://18.208.169.232:8081/artifactory/libs-release</url>
     </repository>
-
+    
     <snapshotRepository>
         <id>snapshots</id>
         <name>jfrog.cloudbinary.io-snapshots</name>
-        <url>http://100.26.56.180:8081/artifactory/libs-snapshot-local</url>
+        <url>http://18.208.169.232:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
-
 </distributionManagement>    
     
     <dependencies>
